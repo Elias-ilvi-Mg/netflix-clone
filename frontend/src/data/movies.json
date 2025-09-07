@@ -1,0 +1,22 @@
+{
+"trending": [
+{
+"id": 1,
+"title": "Sample Thriller",
+"overview": "A tense thriller set in a neon city.",
+"poster": "https://image.tmdb.org/t/p/w500/9Gtg2DzBhmYamXBS1hKAhiwbBKS.jpg",
+"backdrop": "https://image.tmdb.org/t/p/original/9gBVjKcJgXzjK2Q8PzYQ7aE1G4l.jpg",
+"vote": 7.8,
+"year": "2024"
+},
+{
+"id": 2,
+"title": "Indie Drama",
+"overview": "Two strangers meet and change each other's lives.",
+"poster": "https://image.tmdb.org/t/p/w500/5YZbUmjbMa3ClvSW1Wj3D6XGolb.jpg",
+"backdrop": "https://image.tmdb.org/t/p/original/9E76j2DcQv8LdbX1Wa9jWvae9E1.jpg",
+"vote": 8.1,
+"year": "2023"
+}
+]
+}

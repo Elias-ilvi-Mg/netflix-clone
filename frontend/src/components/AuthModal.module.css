@@ -1,0 +1,11 @@
+.backdrop { position: fixed; inset: 0; background: rgba(0,0,0,.6); display: grid; place-items: center; z-index: 100; }
+.modal { width: min(420px, 92vw); background: var(--card); border: 1px solid #262626; border-radius: 12px; overflow: hidden; }
+.header { display: flex; justify-content: space-between; align-items: center; padding: 12px 14px; border-bottom: 1px solid #262626; }
+.header button { background: transparent; border: none; color: #fff; font-size: 20px; }
+.tabs { display: grid; grid-auto-flow: column; }
+.tabs button { background: transparent; border: none; color: #9ca3af; padding: 10px 14px; }
+.tabs .active { color: #fff; border-bottom: 2px solid var(--accent); }
+.body { display: grid; gap: 12px; padding: 14px; }
+.body input { background: #111; border: 1px solid #262626; color: #fff; padding: 10px 12px; border-radius: 8px; }
+.primary { background: var(--accent); color: #fff; padding: 10px 14px; border: none; border-radius: 8px; font-weight: 700; }
+.error { color: #fca5a5; font-size: 14px; }

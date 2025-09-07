@@ -1,0 +1,14 @@
+.header { position: sticky; top: 0; z-index: 40; background: linear-gradient(180deg, rgba(0,0,0,0.8), rgba(0,0,0,0)); }
+.inner { display: flex; align-items: center; gap: 16px; height: 64px; }
+.brand {
+width: 36px; height: 36px; border-radius: 8px; background: var(--accent);
+display: grid; place-items: center; font-weight: 800; color: white; font-size: 20px;
+}
+.nav { display: flex; gap: 16px; margin-left: 8px; }
+.nav a { color: #e5e7eb; }
+.active { color: white; font-weight: 600; }
+.search { margin-left: auto; }
+.search input {
+background: var(--card); border: 1px solid #262626; color: var(--text);
+padding: 10px 12px; border-radius: 8px; min-width: 260px;
+}

@@ -1,0 +1,6 @@
+.wrap { position: relative; }
+.btn { background:#1f2937; color:#fff; border:1px solid #374151; border-radius:8px; padding:8px 12px; }
+.menu { position:absolute; right:0; top:calc(100% + 8px); background:var(--card); border:1px solid #262626; border-radius:12px; padding:8px; display:grid; gap:6px; min-width:200px; z-index:50; }
+.menu button { text-align:left; background:transparent; color:#fff; border:none; padding:8px; border-radius:8px; }
+.menu button:hover { background:#111; }
+.active { background:#0b3; }

@@ -1,0 +1,26 @@
+.wrap { padding: 12px 0 20px; position: relative; }
+.title { margin: 12px 0; font-size: 18px; }
+.row { position: relative; }
+.scroller {
+  display: grid;
+  grid-auto-flow: column;
+  gap: 12px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  padding-bottom: 8px;
+  align-items: start;
+  scroll-behavior: smooth;
+}
+.scroller:focus { outline: 2px solid var(--accent); outline-offset: 4px; }
+
+.nav {
+  position: absolute; top: 50%; transform: translateY(-50%);
+  z-index: 5; border: none;
+  background: rgba(0,0,0,.55); backdrop-filter: blur(4px);
+  width: 40px; height: 72px; border-radius: 12px;
+  color: #fff; font-size: 28px; display: grid; place-items: center;
+  cursor: pointer; opacity: .95; transition: opacity .2s ease, background .2s;
+}
+.nav:hover { opacity: 1; background: rgba(0,0,0,.7); }
+.left { left: 8px; }
+.right { right: 8px; }
