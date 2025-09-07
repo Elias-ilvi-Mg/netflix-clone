@@ -1,0 +1,25 @@
+# Node / JS
+**/node_modules/
+**/.cache/
+npm-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Builds
+**/dist/
+**/build/
+**/.tmp/
+
+# Env / secrets
+.env
+.env.*
+*.local
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Tests / coverage
+coverage/

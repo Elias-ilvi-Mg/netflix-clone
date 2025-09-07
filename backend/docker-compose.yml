@@ -1,0 +1,41 @@
+version: "3.9"
+
+services:
+  mongo:
+    image: mongo:7
+    restart: unless-stopped
+    volumes:
+      - mongodata:/data/db
+    networks: [app]
+
+  backend:
+    build:
+      context: ./netflix-backend
+      dockerfile: Dockerfile
+    environment:
+      PORT: "5001"
+      MONGO_URI: "mongodb://mongo:27017/netflix_clone"
+      JWT_SECRET: "change_me_super_secret"
+      JWT_EXPIRES: "7d"
+      TMDB_API_KEY: "${TMDB_API_KEY:-}"      # pass in via env/CI
+      CLIENT_ORIGIN: "http://localhost:8080" # nginx front
+      NODE_ENV: "production"
+    depends_on:
+      - mongo
+    networks: [app]
+
+  web:
+    build:
+      context: ./netflix-clone
+      dockerfile: Dockerfile
+    ports:
+      - "8080:80"
+    depends_on:
+      - backend
+    networks: [app]
+
+networks:
+  app:
+
+volumes:
+  mongodata:
